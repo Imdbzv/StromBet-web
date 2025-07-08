@@ -1,112 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>StromBet - Comandos Disponibles</title>
-    <style>
-        body {
-            background-color: #0d0d1a;
-            color: #ffffff;
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StromBet - Comandos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0f1a;
+      color: #ffffff;
+    }
 
-        h1 {
-            color: #33ccff;
-            text-align: center;
-            margin-bottom: 40px;
-        }
+    header {
+      background-color: #111;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
 
-        h2 {
-            color: #ffcc00;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
+    header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
 
-        .seccion {
-            margin-bottom: 30px;
-        }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+      flex: 1;
+    }
 
-        ul {
-            list-style-type: "💎 ";
-            padding-left: 20px;
-        }
+    .boton-volver {
+      text-decoration: none;
+      color: #fff;
+      border: 1px solid #555;
+      padding: 6px 12px;
+      border-radius: 8px;
+      background-color: #222;
+    }
 
-        .nota {
-            font-style: italic;
-            color: #aaaaaa;
-        }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #161925;
+      border-radius: 15px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    }
 
-        a.boton {
-            display: inline-block;
-            background-color: #33ccff;
-            color: #000;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: bold;
-            margin-top: 30px;
-        }
+    h2 {
+      color: #40cfff;
+      margin-top: 30px;
+      border-bottom: 1px solid #2c2f3a;
+      padding-bottom: 8px;
+    }
 
-        a.boton:hover {
-            background-color: #00bfff;
-        }
-    </style>
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <h1>💠 StromBet - Comandos Disponibles</h1>
 
-    <div class="seccion">
-        <h2>💼 Economía</h2>
-        <ul>
-            <li><code>/saldo</code> - Ver cuántos 💎 tienes</li>
-            <li><code>/daily</code> - Reclama tu recompensa diaria (15-40 💎)</li>
-            <li><code>/transferir &lt;usuario&gt; &lt;cantidad&gt;</code> - Transfiere 💎 a otro jugador</li>
-            <li><code>/agregar &lt;cantidad&gt;</code> - Agrega 💎 (solo admins)</li>
-        </ul>
-    </div>
+  <header>
+    <img src="StromBet.png" alt="Logo StromBet">
+    <h1>StromBet</h1>
+    <a href="index.html" class="boton-volver">Volver</a>
+  </header>
 
-    <div class="seccion">
-        <h2>🎰 Juegos de Azar</h2>
-        <ul>
-            <li><code>/crash &lt;apuesta&gt;</code> - Sube el multiplicador, ¡detén antes de que explote!</li>
-            <li><code>/limbo &lt;apuesta&gt; &lt;objetivo&gt;</code> - Apuesta esperando llegar a un multiplicador objetivo</li>
-            <li><code>/ruleta &lt;apuesta&gt; &lt;color&gt;</code> - Rojo o negro... tú decides</li>
-        </ul>
-    </div>
+  <div class="container">
+    <h2>Economía</h2>
+    <ul>
+      <li><strong>s!saldo</strong> – Ver tu saldo actual (en Diamantes)</li>
+      <li><strong>s!daily</strong> – Recompensa diaria (15-40 Diamantes)</li>
+      <li><strong>s!transferir &lt;usuario&gt; &lt;cantidad&gt;</strong> – Enviar Diamantes a otro usuario</li>
+      <li><strong>s!agregar &lt;cantidad&gt;</strong> – Añadir Diamantes (Solo admins)</li>
+    </ul>
 
-    <div class="seccion">
-        <h2>🎮 Juegos Clásicos</h2>
-        <ul>
-            <li><code>/piedra &lt;apuesta&gt; &lt;elección&gt;</code> - Piedra, papel o tijera contra el bot</li>
-            <li><code>/blackjack &lt;apuesta&gt;</code> - Juego clásico de Blackjack</li>
-        </ul>
-    </div>
+    <h2>Juegos de Azar</h2>
+    <ul>
+      <li><strong>s!crash &lt;apuesta&gt;</strong> – Sube con el cohete y detén antes de que explote</li>
+      <li><strong>s!limbo &lt;apuesta&gt; &lt;objetivo&gt;</strong> – Elige tu multiplicador y gana si aciertas</li>
+      <li><strong>s!ppt &lt;apuesta&gt; &lt;elección&gt;</strong> – Piedra, Papel o Tijera</li>
+      <li><strong>s!ruleta &lt;apuesta&gt; &lt;color&gt;</strong> – Apuesta al rojo o negro</li>
+    </ul>
 
-    <div class="seccion">
-        <h2>🧠 Juegos Estratégicos</h2>
-        <ul>
-            <li><code>/minas &lt;apuesta&gt; [minas]</code> - Esquiva las minas en un tablero (3 a 12 minas)</li>
-            <li><code>/cofres &lt;apuesta&gt; [cofres]</code> - Encuentra el cofre con el tesoro (3 a 5 cofres)</li>
-        </ul>
-    </div>
+    <h2>Juegos de Estrategia</h2>
+    <ul>
+      <li><strong>s!blackjack &lt;apuesta&gt;</strong> – Juego clásico de cartas</li>
+      <li><strong>s!minas &lt;apuesta&gt; [minas]</strong> – Campo de minas (3-12 minas)</li>
+      <li><strong>s!cofres &lt;apuesta&gt; [cofres]</strong> – Encuentra el cofre correcto (3-5 cofres)</li>
+    </ul>
 
-    <div class="seccion">
-        <h2>📌 Reglas Generales</h2>
-        <ul>
-            <li>Todos los usuarios inician con <strong>0 💎</strong></li>
-            <li>Usa <code>/daily</code> cada 24 horas para ganar 💎 gratis</li>
-            <li>Las apuestas deben ser números enteros</li>
-            <li>No puedes apostar más 💎 de los que tienes</li>
-            <li><strong>100 💎 = 1 🪙 Robux</strong></li>
-            <li>También puedes usar comandos con prefijo: <code>s!</code></li>
-        </ul>
-        <p class="nota">Juega responsablemente y diviértete 🎉</p>
-    </div>
+    <h2>Reglas Generales</h2>
+    <ul>
+      <li>Todos empiezan con 0 Diamantes</li>
+      <li>Usa <strong>s!daily</strong> cada 24 horas</li>
+      <li>Solo puedes apostar lo que tienes</li>
+      <li>1 Robux equivale a 10 Diamantes</li>
+      <li>También puedes usar comandos slash (/comando)</li>
+    </ul>
 
-    <div style="text-align:center;">
-        <a href="index.html" class="boton">⬅ Volver al Inicio</a>
-    </div>
+    <footer>
+      © 2025 StromBet Bot — Juega con responsabilidad ⚡
+    </footer>
+  </div>
 </body>
 </html>
