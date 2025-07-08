@@ -1,179 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StromBet Bot</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>StromBet | Bot de Discord</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      font-family: 'Rubik', sans-serif;
-      background-color: #0a0f1a;
-      color: #ffffff;
-      overflow-x: hidden;
-    }
-
-    header {
-      background: linear-gradient(to right, #0a0f1a, #001f3f);
-      padding: 50px 20px;
-      text-align: center;
-      animation: fadeIn 1s ease;
-    }
-
-    header img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid #007bff;
-      box-shadow: 0 0 15px #007bff;
-    }
-
-    header h1 {
-      margin: 20px 0 10px;
-      font-size: 2.5em;
-    }
-
-    header p {
-      font-size: 1.2em;
-      color: #c0c0c0;
-    }
-
-<a href="comandos.html" class="boton">Ver Comandos</a>
-    
-    .buttons {
-      margin-top: 25px;
-    }
-
-    .buttons a {
-      display: inline-block;
-      background-color: #007bff;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #0f172a, #0c0c0c);
       color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #38bdf8;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .boton {
       padding: 12px 24px;
-      margin: 10px;
-      border-radius: 8px;
+      background-color: #2563eb;
+      color: white;
       text-decoration: none;
       font-weight: bold;
-      transition: background-color 0.3s, transform 0.2s;
+      border-radius: 10px;
+      transition: background-color 0.3s;
     }
 
-    .buttons a:hover {
-      background-color: #0056b3;
-      transform: scale(1.05);
-    }
-
-    section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .section-title {
-      font-size: 2em;
-      margin-bottom: 25px;
-      color: #00bfff;
-      animation: fadeInUp 1s ease;
-    }
-
-    ul.command-list {
-      list-style: none;
-      padding: 0;
-      max-width: 700px;
-      margin: auto;
-      text-align: left;
-    }
-
-    ul.command-list li {
-      margin-bottom: 15px;
-      background-color: #111827;
-      padding: 15px;
-      border-radius: 6px;
-      border-left: 4px solid #007bff;
-      transition: transform 0.2s;
-    }
-
-    ul.command-list li:hover {
-      transform: translateX(5px);
+    .boton:hover {
+      background-color: #1e40af;
     }
 
     footer {
-      background-color: #000814;
-      text-align: center;
-      padding: 20px;
-      color: #666;
-      font-size: 0.9em;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2em;
-      }
-
-      header img {
-        width: 100px;
-        height: 100px;
-      }
-
-      .buttons a {
-        width: 90%;
-        display: block;
-        margin: 10px auto;
-      }
-
-      ul.command-list li {
-        font-size: 0.95em;
-      }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
+  <h1>StromBet</h1>
+  <p>Un bot de Discord con economía virtual y minijuegos adictivos. ¡Juega, apuesta y gana con estilo!</p>
 
-  <header>
-    <img src="https://via.placeholder.com/150" alt="Logo del Bot" id="botLogo" />
-    <h1>StromBet</h1>
-    <p>El bot de economía y minijuegos más completo para Discord.</p>
-    <div class="buttons">
-      <a href="https://discord.com/oauth2/authorize?client_id=1389822662431211560&permissions=8&integration_type=0&scope=bot+applications.commands" target="_blank">➕ Invítame</a>
-      <a href="https://discord.gg/stromcm" target="_blank">💬 Servidor de Soporte</a>
-    </div>
-  </header>
-
-  <section>
-    <h2 class="section-title">⚙️ Comandos Principales</h2>
-    <ul class="command-list">
-      <li><strong>/saldo</strong> — Consulta tu saldo actual.</li>
-      <li><strong>/daily</strong> — Reclama tu recompensa diaria.</li>
-      <li><strong>/transferir</strong> — Envía monedas a otro jugador.</li>
-      <li><strong>/crash</strong> — Juega el minijuego del cohete.</li>
-      <li><strong>/blackjack</strong> — Intenta llegar a 21 sin pasarte.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2 class="section-title">📊 Estadísticas</h2>
-    <p>Más de 200 usuarios activos | 10+ minijuegos | Economía estable y divertida</p>
-  </section>
+  <a href="comandos.html" class="boton">Ver Comandos</a>
 
   <footer>
-    <p>© 2025 StromBet — Hecho con ❤️ por 000_imdbzv</p>
+    <p>© 2025 StromBet | <a href="https://discord.gg/stromcm" style="color: #38bdf8;">Únete al servidor</a></p>
   </footer>
-
-  <script>
-    document.getElementById("botLogo").src = "https://imgur.com/a/bO00ulS";
-  </script>
-
 </body>
 </html>
