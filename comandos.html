@@ -1,106 +1,112 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Strom Bet - Comandos Disponibles</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: radial-gradient(circle at top left, #0f172a, #020617);
-      color: #f8fafc;
-      padding: 40px 20px;
-    }h1 {
-  text-align: center;
-  color: #38bdf8;
-  margin-bottom: 10px;
-  font-size: 2.5rem;
-}
+    <meta charset="UTF-8">
+    <title>StromBet - Comandos Disponibles</title>
+    <style>
+        body {
+            background-color: #0d0d1a;
+            color: #ffffff;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
 
-p {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #cbd5e1;
-}
+        h1 {
+            color: #33ccff;
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-.seccion {
-  margin-top: 40px;
-}
+        h2 {
+            color: #ffcc00;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
 
-.seccion h2 {
-  color: #60a5fa;
-  border-left: 5px solid #38bdf8;
-  padding-left: 15px;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
+        .seccion {
+            margin-bottom: 30px;
+        }
 
-.comando {
-  margin: 10px 0;
-  padding: 10px 15px;
-  background-color: #1e293b;
-  border-left: 4px solid #2563eb;
-  border-radius: 8px;
-  font-size: 1rem;
-  color: #e0f2fe;
-}
+        ul {
+            list-style-type: "💎 ";
+            padding-left: 20px;
+        }
 
-code {
-  color: #93c5fd;
-  font-weight: bold;
-}
+        .nota {
+            font-style: italic;
+            color: #aaaaaa;
+        }
 
-.volver {
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
-}
+        a.boton {
+            display: inline-block;
+            background-color: #33ccff;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
 
-.volver a {
-  background-color: #2563eb;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.volver a:hover {
-  background-color: #1e40af;
-}
-
-  </style>
+        a.boton:hover {
+            background-color: #00bfff;
+        }
+    </style>
 </head>
 <body>
-  <h1>🎰 Strom Bet - Comandos Disponibles</h1>
-  <p>¡Bienvenido al casino virtual de Discord! Aquí tienes todos los comandos disponibles:</p>  <div class="seccion">
-    <h2>💰 Economía</h2>
-    <div class="comando"><code>s!saldo</code> — Ver tu saldo actual</div>
-    <div class="comando"><code>s!daily</code> — Recompensa diaria (15-40)</div>
-    <div class="comando"><code>s!transferir &lt;usuario&gt; &lt;cantidad&gt;</code> — Transferir dinero</div>
-    <div class="comando"><code>s!agregar &lt;cantidad&gt;</code> — Agregar saldo (Solo admins)</div>
-  </div>  <div class="seccion">
-    <h2>🎲 Juegos de Azar</h2>
-    <div class="comando"><code>s!crash &lt;apuesta&gt;</code> — Juego Crash con multiplicador</div>
-    <div class="comando"><code>s!limbo &lt;apuesta&gt; &lt;objetivo&gt;</code> — Juego Limbo con objetivo</div>
-    <div class="comando"><code>s!ppt &lt;apuesta&gt; &lt;elección&gt;</code> — Piedra, Papel o Tijera</div>
-    <div class="comando"><code>s!ruleta &lt;apuesta&gt; &lt;color&gt;</code> — Ruleta (rojo/negro)</div>
-  </div>  <div class="seccion">
-    <h2>🃏 Juegos de Cartas y Estrategia</h2>
-    <div class="comando"><code>s!blackjack &lt;apuesta&gt;</code> — Juego de Blackjack clásico</div>
-    <div class="comando"><code>s!minas &lt;apuesta&gt; [minas]</code> — Campo de minas 5x5 (3-12 minas)</div>
-    <div class="comando"><code>s!cofres &lt;apuesta&gt; [cofres]</code> — Adivina el cofre correcto (3-5 cofres)</div>
-  </div>  <div class="seccion">
-    <h2>📜 Reglas Generales</h2>
-    <div class="comando">Todos los usuarios empiezan con <strong>0</strong></div>
-    <div class="comando">Usa <code>s!daily</code> para obtener dinero cada 24h</div>
-    <div class="comando">Las apuestas deben ser <strong>números enteros</strong></div>
-    <div class="comando">No puedes apostar más de lo que tienes</div>
-    <div class="comando">100 monedas equivalen a <strong>10 robux</strong></div>
-    <div class="comando">También puedes usar comandos slash (<code>/comando</code>)</div>
-    <div class="comando">¡Diviértete jugando responsablemente! 🧠</div>
-  </div>  <div class="volver">
-    <a href="index.html">← Volver al inicio</a>
-  </div>
+    <h1>💠 StromBet - Comandos Disponibles</h1>
+
+    <div class="seccion">
+        <h2>💼 Economía</h2>
+        <ul>
+            <li><code>/saldo</code> - Ver cuántos 💎 tienes</li>
+            <li><code>/daily</code> - Reclama tu recompensa diaria (15-40 💎)</li>
+            <li><code>/transferir &lt;usuario&gt; &lt;cantidad&gt;</code> - Transfiere 💎 a otro jugador</li>
+            <li><code>/agregar &lt;cantidad&gt;</code> - Agrega 💎 (solo admins)</li>
+        </ul>
+    </div>
+
+    <div class="seccion">
+        <h2>🎰 Juegos de Azar</h2>
+        <ul>
+            <li><code>/crash &lt;apuesta&gt;</code> - Sube el multiplicador, ¡detén antes de que explote!</li>
+            <li><code>/limbo &lt;apuesta&gt; &lt;objetivo&gt;</code> - Apuesta esperando llegar a un multiplicador objetivo</li>
+            <li><code>/ruleta &lt;apuesta&gt; &lt;color&gt;</code> - Rojo o negro... tú decides</li>
+        </ul>
+    </div>
+
+    <div class="seccion">
+        <h2>🎮 Juegos Clásicos</h2>
+        <ul>
+            <li><code>/piedra &lt;apuesta&gt; &lt;elección&gt;</code> - Piedra, papel o tijera contra el bot</li>
+            <li><code>/blackjack &lt;apuesta&gt;</code> - Juego clásico de Blackjack</li>
+        </ul>
+    </div>
+
+    <div class="seccion">
+        <h2>🧠 Juegos Estratégicos</h2>
+        <ul>
+            <li><code>/minas &lt;apuesta&gt; [minas]</code> - Esquiva las minas en un tablero (3 a 12 minas)</li>
+            <li><code>/cofres &lt;apuesta&gt; [cofres]</code> - Encuentra el cofre con el tesoro (3 a 5 cofres)</li>
+        </ul>
+    </div>
+
+    <div class="seccion">
+        <h2>📌 Reglas Generales</h2>
+        <ul>
+            <li>Todos los usuarios inician con <strong>0 💎</strong></li>
+            <li>Usa <code>/daily</code> cada 24 horas para ganar 💎 gratis</li>
+            <li>Las apuestas deben ser números enteros</li>
+            <li>No puedes apostar más 💎 de los que tienes</li>
+            <li><strong>100 💎 = 1 🪙 Robux</strong></li>
+            <li>También puedes usar comandos con prefijo: <code>s!</code></li>
+        </ul>
+        <p class="nota">Juega responsablemente y diviértete 🎉</p>
+    </div>
+
+    <div style="text-align:center;">
+        <a href="index.html" class="boton">⬅ Volver al Inicio</a>
+    </div>
 </body>
 </html>
