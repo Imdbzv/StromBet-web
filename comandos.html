@@ -1,20 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Comandos de StromBet</title>
-    <link rel="stylesheet" href="style.css"> <!-- Si usas un CSS compartido -->
+  <meta charset="UTF-8">
+  <title>Comandos | StromBet</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #0f172a, #0c0c0c);
+      color: white;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .categoria {
+      margin-top: 40px;
+    }
+
+    .categoria h2 {
+      color: #60a5fa;
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 5px;
+    }
+
+    .comando {
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #1e293b;
+      border-radius: 10px;
+    }
+
+    .comando code {
+      font-size: 1.05rem;
+      color: #93c5fd;
+    }
+
+    .volver {
+      display: block;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .volver a {
+      background-color: #2563eb;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .volver a:hover {
+      background-color: #1e40af;
+    }
+  </style>
 </head>
 <body>
-    <h1>📜 Lista de Comandos</h1>
-    <ul>
-        <li><strong>/saldo</strong> - Ver tu saldo actual</li>
-        <li><strong>/daily</strong> - Reclamación diaria</li>
-        <li><strong>/transferir</strong> - Enviar monedas a otro usuario</li>
-        <li><strong>/crash</strong> - Juega al minijuego Crash</li>
-        <!-- Agrega más según tu bot -->
-    </ul>
+  <h1>📘 Comandos de StromBet</h1>
 
-    <a href="index.html">← Volver a inicio</a>
+  <div class="categoria">
+    <h2>💰 Economía</h2>
+    <div class="comando"><code>/saldo</code> — Consulta tu saldo actual</div>
+    <div class="comando"><code>/daily</code> — Reclama tu recompensa diaria</div>
+    <div class="comando"><code>/transferir [usuario] [cantidad]</code> — Envía monedas a otro</div>
+    <div class="comando"><code>/agregar [cantidad]</code> — Solo admins: Añadir monedas</div>
+  </div>
+
+  <div class="categoria">
+    <h2>🎮 Minijuegos</h2>
+    <div class="comando"><code>/crash [apuesta]</code> — Multiplica hasta que explote</div>
+    <div class="comando"><code>/limbo [apuesta] [objetivo]</code> — Llega al multiplicador justo</div>
+    <div class="comando"><code>/piedra [apuesta] [piedra/papel/tijera]</code> — Reta al bot</div>
+    <div class="comando"><code>/ruleta [apuesta] [rojo/negro]</code> — Apuesta al color</div>
+    <div class="comando"><code>/blackjack [apuesta]</code> — Juega 21 contra el bot</div>
+    <div class="comando"><code>/minas [apuesta] [minas]</code> — Evita las minas y gana</div>
+    <div class="comando"><code>/cofres [apuesta] [cofres]</code> — Encuentra el cofre correcto</div>
+  </div>
+
+  <div class="categoria">
+    <h2>🛠️ Utilidad</h2>
+    <div class="comando"><code>/diagnostico</code> — Verifica el estado del bot</div>
+    <div class="comando"><code>/ayuda</code> — Ver guía de comandos</div>
+  </div>
+
+  <div class="volver">
+    <a href="index.html">← Volver al inicio</a>
+  </div>
 </body>
 </html>
