@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Comandos | StromBet</title>
+  <title>Strom Bet - Comandos Disponibles</title>
   <style>
     body {
       margin: 0;
@@ -18,11 +18,17 @@
       margin-bottom: 10px;
     }
 
-    .categoria {
+    p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #cbd5e1;
+    }
+
+    .seccion {
       margin-top: 40px;
     }
 
-    .categoria h2 {
+    .seccion h2 {
       color: #60a5fa;
       border-bottom: 2px solid #1e3a8a;
       padding-bottom: 5px;
@@ -33,11 +39,12 @@
       padding: 10px;
       background-color: #1e293b;
       border-radius: 10px;
+      font-size: 1rem;
     }
 
-    .comando code {
-      font-size: 1.05rem;
+    code {
       color: #93c5fd;
+      font-weight: bold;
     }
 
     .volver {
@@ -61,31 +68,41 @@
   </style>
 </head>
 <body>
-  <h1>📘 Comandos de StromBet</h1>
+  <h1>🎰 Strom Bet - Comandos Disponibles</h1>
+  <p>¡Bienvenido al casino virtual de Discord! Aquí tienes todos los comandos disponibles:</p>
 
-  <div class="categoria">
+  <div class="seccion">
     <h2>💰 Economía</h2>
-    <div class="comando"><code>/saldo</code> — Consulta tu saldo actual</div>
-    <div class="comando"><code>/daily</code> — Reclama tu recompensa diaria</div>
-    <div class="comando"><code>/transferir [usuario] [cantidad]</code> — Envía monedas a otro</div>
-    <div class="comando"><code>/agregar [cantidad]</code> — Solo admins: Añadir monedas</div>
+    <div class="comando"><code>s!saldo</code> — Ver tu saldo actual</div>
+    <div class="comando"><code>s!daily</code> — Recompensa diaria (15-40)</div>
+    <div class="comando"><code>s!transferir &lt;usuario&gt; &lt;cantidad&gt;</code> — Transferir monedas</div>
+    <div class="comando"><code>s!agregar &lt;cantidad&gt;</code> — Agregar saldo (solo admins)</div>
   </div>
 
-  <div class="categoria">
-    <h2>🎮 Minijuegos</h2>
-    <div class="comando"><code>/crash [apuesta]</code> — Multiplica hasta que explote</div>
-    <div class="comando"><code>/limbo [apuesta] [objetivo]</code> — Llega al multiplicador justo</div>
-    <div class="comando"><code>/piedra [apuesta] [piedra/papel/tijera]</code> — Reta al bot</div>
-    <div class="comando"><code>/ruleta [apuesta] [rojo/negro]</code> — Apuesta al color</div>
-    <div class="comando"><code>/blackjack [apuesta]</code> — Juega 21 contra el bot</div>
-    <div class="comando"><code>/minas [apuesta] [minas]</code> — Evita las minas y gana</div>
-    <div class="comando"><code>/cofres [apuesta] [cofres]</code> — Encuentra el cofre correcto</div>
+  <div class="seccion">
+    <h2>🎲 Juegos de Azar</h2>
+    <div class="comando"><code>s!crash &lt;apuesta&gt;</code> — Juego Crash con multiplicador</div>
+    <div class="comando"><code>s!limbo &lt;apuesta&gt; &lt;objetivo&gt;</code> — Juego Limbo con objetivo</div>
+    <div class="comando"><code>s!ppt &lt;apuesta&gt; &lt;elección&gt;</code> — Piedra, Papel o Tijera</div>
+    <div class="comando"><code>s!ruleta &lt;apuesta&gt; &lt;color&gt;</code> — Ruleta (rojo/negro)</div>
   </div>
 
-  <div class="categoria">
-    <h2>🛠️ Utilidad</h2>
-    <div class="comando"><code>/diagnostico</code> — Verifica el estado del bot</div>
-    <div class="comando"><code>/ayuda</code> — Ver guía de comandos</div>
+  <div class="seccion">
+    <h2>🃏 Juegos de Cartas y Estrategia</h2>
+    <div class="comando"><code>s!blackjack &lt;apuesta&gt;</code> — Juego de Blackjack clásico</div>
+    <div class="comando"><code>s!minas &lt;apuesta&gt; [minas]</code> — Campo de minas 5x5 (3-12 minas)</div>
+    <div class="comando"><code>s!cofres &lt;apuesta&gt; [cofres]</code> — Adivina el cofre correcto (3-5 cofres)</div>
+  </div>
+
+  <div class="seccion">
+    <h2>📜 Reglas Generales</h2>
+    <div class="comando">Todos los usuarios empiezan con <strong>0</strong>.</div>
+    <div class="comando">Usa <code>s!daily</code> para obtener dinero cada 24h.</div>
+    <div class="comando">Las apuestas deben ser <strong>números enteros</strong>.</div>
+    <div class="comando">No puedes apostar más de lo que tienes.</div>
+    <div class="comando">100 monedas equivalen a <strong>10 reales</strong>.</div>
+    <div class="comando">También puedes usar comandos slash (<code>/comando</code>).</div>
+    <div class="comando">¡Diviértete jugando responsablemente! 🧠</div>
   </div>
 
   <div class="volver">
