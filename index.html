@@ -1,79 +1,100 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StromBet - Casino en Discord</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Strom Bet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Roboto', sans-serif;
       background: #0f0f1a;
-      color: #f0f0f0;
+      color: #fff;
+      text-align: center;
     }
+
     header {
-      background: #101828;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 2px solid #00bfff;
+      background-color: #101820;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-    header h1 {
-      margin: 0;
-      color: #00bfff;
-      font-size: 2.5em;
+
+    .logo {
+      height: 50px;
+      border-radius: 50%;
     }
-    nav {
-      text-align: center;
-      margin: 20px 0;
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: bold;
     }
-    .boton {
-      background-color: #00bfff;
-      border: none;
-      color: white;
-      padding: 12px 25px;
-      margin: 8px;
-      font-size: 1em;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
+
+    .buttons a {
       display: inline-block;
+      margin: 1rem 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      background: #1e90ff;
+      color: white;
+      font-size: 1rem;
+      transition: background 0.3s ease;
     }
-    .boton:hover {
-      background-color: #009ad6;
+
+    .buttons a:hover {
+      background: #1565c0;
     }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      text-align: center;
+
+    .hero img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      margin: 2rem auto 1rem;
     }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .hero p {
+      max-width: 500px;
+      margin: 0.5rem auto 2rem;
+      color: #bbb;
+    }
+
     footer {
-      text-align: center;
-      padding: 15px;
-      background: #101828;
-      border-top: 2px solid #00bfff;
-      color: #888;
+      margin-top: 2rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>🎰 StromBet</h1>
-    <p>Tu casino virtual en Discord</p>
-  </header>  <nav>
-    <a href="comandos.html" class="boton">🛠️ Comandos</a>
-    <a href="sobre.html" class="boton">ℹ️ Sobre el Bot</a>
-    <a href="https://discord.com/oauth2/authorize?client_id=1389822662431211560&permissions=8&integration_type=0&scope=bot+applications.commands" class="boton">➕ Invítalo</a>
-    <a href="https://discord.gg/stromcm" class="boton">🌐 Servidor Oficial</a>
-  </nav>  <main>
-    <h2>✨ ¿Qué es StromBet?</h2>
-    <p>Es un bot de economía y casino para Discord que te permite ganar <strong>Diamantes 💎</strong> y canjearlos por <strong>Robux</strong>. Incluye minijuegos, transferencias, comandos slash y recompensas diarias.</p><h2>🎮 Juega sin parar</h2>
-<p>Disfruta de juegos como Crash, Blackjack, Minas, Cofres, Limbo, Ruleta y Piedra, Papel o Tijera.</p>
+    <img src="StromBet.png" alt="Logo" class="logo" />
+    <div class="title">Strom Bet</div>
+    <a href="https://discord.com/login" style="color: white; text-decoration: none;">🔐 Iniciar sesión</a>
+  </header>
 
-<h2>💎 Economía integrada</h2>
-<p>Usa <code>/daily</code> para ganar Diamantes gratis cada día, <code>/saldo</code> para revisar tus fondos, <code>/transferir</code> para mover tus Diamantes, y <code>/agregar</code> si eres admin.</p>
+  <section class="hero">
+    <img src="StromBet.png" alt="Logo grande" />
+    <h1>Strom Bet</h1>
+    <p>Un bot de casino virtual para Discord con economía, juegos de azar y recompensas diarias en diamantes y robux. ¡Pruébalo gratis!</p>
+    <div class="buttons">
+      <a href="https://discord.com/oauth2/authorize?client_id=1389822662431211560&permissions=8&integration_type=0&scope=bot+applications.commands" target="_blank">➕ Añadir a Discord</a>
+      <a href="comandos.html">📜 Ver comandos</a>
+      <a href="https://discord.gg/stromcm" target="_blank">🌐 Servidor de soporte</a>
+    </div>
+  </section>
 
-  </main>  <footer>
-    <p>Creado por Imdbzv | © 2025 StromBet</p>
+  <footer>
+    © 2025 Strom Bet. Todos los derechos reservados.
   </footer>
 </body>
 </html>
