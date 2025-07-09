@@ -2,32 +2,106 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Strom Bet - Documentación</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Documentación - Strom Bet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #0f0f1a;
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      background-color: #101820;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      text-align: left;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e90ff;
+    }
+
+    p, li {
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .boton-volver {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background: #1e90ff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .boton-volver:hover {
+      background: #1565c0;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
-<body class="dark-theme">
+<body>
   <header>
     <img src="StromBet.png" alt="Logo" class="logo" />
-    <h1>Strom Bet</h1>
-    <a href="#" class="login-button">Iniciar sesión</a>
+    <div class="title">Strom Bet</div>
+    <a href="https://discord.com/login" style="color: white; text-decoration: none;">🔐 Iniciar sesión</a>
   </header>
 
-  <main class="contenido">
-    <h2>Documentación y Política de Privacidad</h2>
-    <p>La privacidad de los usuarios es importante para nosotros. Esta sección explica cómo manejamos tus datos:</p>
+  <main class="content">
+    <h2>📚 Documentación y Política de Privacidad</h2>
+    <p>En Strom Bet nos tomamos en serio tu privacidad. Aquí te explicamos cómo gestionamos la información de los usuarios:</p>
+
     <ul>
-      <li>🔐 Recolectamos datos básicos como tu ID de usuario, saldo virtual y estadísticas de juego para ofrecerte las funciones del bot.</li>
-      <li>🗄️ Tus datos se almacenan de forma segura en bases de datos SQLite en Replit. No los compartimos con terceros.</li>
-      <li>🚫 No accedemos a mensajes privados, contraseñas ni a ninguna información confidencial.</li>
-      <li>📬 Puedes contactarnos en cualquier momento para solicitar la eliminación de tus datos.</li>
+      <li>🔹 Recolectamos datos básicos como tu ID de Discord, tu saldo virtual y tu historial de juegos para que el bot funcione correctamente.</li>
+      <li>🔹 Esta información solo se almacena dentro del propio bot y su base de datos. No se comparte con terceros ni se usa con fines comerciales.</li>
+      <li>🔹 No accedemos a tus mensajes privados, contraseñas ni datos sensibles.</li>
+      <li>🔹 Puedes solicitar que eliminemos tu información escribiendo en nuestro servidor de soporte.</li>
+      <li>🔹 El uso del bot implica aceptar estas condiciones básicas de uso y almacenamiento de datos.</li>
     </ul>
 
-    <a href="index.html" class="boton">Volver al inicio</a>
+    <p>Gracias por ser parte de Strom Bet. Nuestro objetivo es ofrecer una experiencia divertida y segura.</p>
+
+    <a class="boton-volver" href="index.html">⬅️ Volver al inicio</a>
   </main>
 
   <footer>
-    <p>&copy; 2025 Strom Bet. Todos los derechos reservados.</p>
+    © 2025 Strom Bet. Todos los derechos reservados.
   </footer>
 </body>
 </html>
